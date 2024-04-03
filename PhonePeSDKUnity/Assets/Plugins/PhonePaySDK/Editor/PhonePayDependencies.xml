@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<dependencies>
+    <androidPackages>
+        <androidPackage spec="phonepe.intentsdk.android.release:IntentSDK:2.4.3" />
+        <repositories>
+        <repository>https://phonepe.mycloudrepo.io/public/repositories/phonepe-intentsdk-android</repository>
+      </repositories>
+    </androidPackages>
+    <iosPods>
+        <iosPod name="PhonePePayment" version="~> 2.7.3" />
+    </iosPods>
+</dependencies>

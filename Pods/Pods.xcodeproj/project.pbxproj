@@ -1,0 +1,547 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		F6A43AC75024799F4CE9B382496CA5C5 /* PhonePePayment */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 77BA1CE40C1C88600785CF69058F7788 /* Build configuration list for PBXAggregateTarget "PhonePePayment" */;
+			buildPhases = (
+				F24A50681C071CF79B6A9E2CF88934CA /* [CP] Copy XCFrameworks */,
+			);
+			dependencies = (
+			);
+			name = PhonePePayment;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		01DC9ACD016203A3516A1B823AC30B90 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		0AF88B5ADEEEC7755C305F7987A48531 /* Pods-PhonePeSDKIos-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FCA7B2F4F3B106B8837BA3F79DFA8299 /* Pods-PhonePeSDKIos-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0BA6E13874E379043B4FADE182B5D666 /* Pods-PhonePeSDKIos-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C73399AA63C3B74B9B354753C8441DA /* Pods-PhonePeSDKIos-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1B6F8DFC96079707E1EA9D935CAD1A18 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F6A43AC75024799F4CE9B382496CA5C5;
+			remoteInfo = PhonePePayment;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		091B0BE0E503F3E7815A6A1EDC7AE866 /* Pods-PhonePeSDKIos-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PhonePeSDKIos-frameworks.sh"; sourceTree = "<group>"; };
+		2C52E164D5FCBBDB299063EC7C7C879C /* Pods-PhonePeSDKIos-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PhonePeSDKIos-acknowledgements.plist"; sourceTree = "<group>"; };
+		2F543322ECFFAB4C2C9B1D8F7266A33A /* PhonePePayment.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; path = PhonePePayment.xcframework; sourceTree = "<group>"; };
+		4AEAD6A03CD75AB43C8339ED8130A99B /* Pods-PhonePeSDKIos */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-PhonePeSDKIos"; path = Pods_PhonePeSDKIos.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D951CD313F016619C5C8F28757BFA6B /* Pods-PhonePeSDKIos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PhonePeSDKIos.debug.xcconfig"; sourceTree = "<group>"; };
+		5DFA806942A959ED79F6BB6DE183DC61 /* Pods-PhonePeSDKIos-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PhonePeSDKIos-Info.plist"; sourceTree = "<group>"; };
+		61603F33A4EF29620574D2C99A421621 /* Pods-PhonePeSDKIos-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PhonePeSDKIos-acknowledgements.markdown"; sourceTree = "<group>"; };
+		6A26DBCB1600F9FD427901CEEE48D5FC /* PhonePePayment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PhonePePayment.debug.xcconfig; sourceTree = "<group>"; };
+		6C73399AA63C3B74B9B354753C8441DA /* Pods-PhonePeSDKIos-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PhonePeSDKIos-dummy.m"; sourceTree = "<group>"; };
+		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		7E91167BF5ABE23ADECE02A373C935CB /* PhonePePayment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PhonePePayment.release.xcconfig; sourceTree = "<group>"; };
+		7F374EB08DE96DE973DCD5A8CDE48CD8 /* Pods-PhonePeSDKIos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PhonePeSDKIos.release.xcconfig"; sourceTree = "<group>"; };
+		8CA697DC24859DC45D5E8342C2CC6E06 /* PhonePePayment-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "PhonePePayment-xcframeworks.sh"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		DDD6289DB0A5EBA4E6B08E1D3FC18F11 /* Pods-PhonePeSDKIos.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-PhonePeSDKIos.modulemap"; sourceTree = "<group>"; };
+		FCA7B2F4F3B106B8837BA3F79DFA8299 /* Pods-PhonePeSDKIos-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PhonePeSDKIos-umbrella.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8139E828229E9872D9937CF8DD98E959 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01DC9ACD016203A3516A1B823AC30B90 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0A8A9115DD6494F1FD2A27D45276B3ED /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CB2C76EA1571D6F0EB483910DE7C6DE8 /* PhonePePayment */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		0D7DB004D3463F1914D5DF34C12F0B7D /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				8CA697DC24859DC45D5E8342C2CC6E06 /* PhonePePayment-xcframeworks.sh */,
+				6A26DBCB1600F9FD427901CEEE48D5FC /* PhonePePayment.debug.xcconfig */,
+				7E91167BF5ABE23ADECE02A373C935CB /* PhonePePayment.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/PhonePePayment";
+			sourceTree = "<group>";
+		};
+		45CBA415A62FF99BF6E6729E48BD1980 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B1633BD88DF84B916B9D7F93726DD362 /* Pods-PhonePeSDKIos */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		6020C6B416F384648328186BC075D5C4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4AEAD6A03CD75AB43C8339ED8130A99B /* Pods-PhonePeSDKIos */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B1633BD88DF84B916B9D7F93726DD362 /* Pods-PhonePeSDKIos */ = {
+			isa = PBXGroup;
+			children = (
+				DDD6289DB0A5EBA4E6B08E1D3FC18F11 /* Pods-PhonePeSDKIos.modulemap */,
+				61603F33A4EF29620574D2C99A421621 /* Pods-PhonePeSDKIos-acknowledgements.markdown */,
+				2C52E164D5FCBBDB299063EC7C7C879C /* Pods-PhonePeSDKIos-acknowledgements.plist */,
+				6C73399AA63C3B74B9B354753C8441DA /* Pods-PhonePeSDKIos-dummy.m */,
+				091B0BE0E503F3E7815A6A1EDC7AE866 /* Pods-PhonePeSDKIos-frameworks.sh */,
+				5DFA806942A959ED79F6BB6DE183DC61 /* Pods-PhonePeSDKIos-Info.plist */,
+				FCA7B2F4F3B106B8837BA3F79DFA8299 /* Pods-PhonePeSDKIos-umbrella.h */,
+				5D951CD313F016619C5C8F28757BFA6B /* Pods-PhonePeSDKIos.debug.xcconfig */,
+				7F374EB08DE96DE973DCD5A8CDE48CD8 /* Pods-PhonePeSDKIos.release.xcconfig */,
+			);
+			name = "Pods-PhonePeSDKIos";
+			path = "Target Support Files/Pods-PhonePeSDKIos";
+			sourceTree = "<group>";
+		};
+		CB2C76EA1571D6F0EB483910DE7C6DE8 /* PhonePePayment */ = {
+			isa = PBXGroup;
+			children = (
+				CFBC14FB4CC6CA784DB1A8F2124D28CE /* Frameworks */,
+				0D7DB004D3463F1914D5DF34C12F0B7D /* Support Files */,
+			);
+			name = PhonePePayment;
+			path = PhonePePayment;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				0A8A9115DD6494F1FD2A27D45276B3ED /* Pods */,
+				6020C6B416F384648328186BC075D5C4 /* Products */,
+				45CBA415A62FF99BF6E6729E48BD1980 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		CFBC14FB4CC6CA784DB1A8F2124D28CE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2F543322ECFFAB4C2C9B1D8F7266A33A /* PhonePePayment.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				578452D2E740E91742655AC8F1636D1F /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		617C956F128387C08E9AC4AEE7046A57 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0AF88B5ADEEEC7755C305F7987A48531 /* Pods-PhonePeSDKIos-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		7571CC49B40A42E6FF8CBD2E9AC3F6B5 /* Pods-PhonePeSDKIos */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5882A56FF8BCCFFFF0110FB411477957 /* Build configuration list for PBXNativeTarget "Pods-PhonePeSDKIos" */;
+			buildPhases = (
+				617C956F128387C08E9AC4AEE7046A57 /* Headers */,
+				FB88B077C92FFEC562F7BCCE41B9AEA7 /* Sources */,
+				8139E828229E9872D9937CF8DD98E959 /* Frameworks */,
+				E386029D0E0FC00DD3E7BBFE94708676 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				926EB566AE3F4251F692C36FB667F136 /* PBXTargetDependency */,
+			);
+			name = "Pods-PhonePeSDKIos";
+			productName = Pods_PhonePeSDKIos;
+			productReference = 4AEAD6A03CD75AB43C8339ED8130A99B /* Pods-PhonePeSDKIos */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 6020C6B416F384648328186BC075D5C4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F6A43AC75024799F4CE9B382496CA5C5 /* PhonePePayment */,
+				7571CC49B40A42E6FF8CBD2E9AC3F6B5 /* Pods-PhonePeSDKIos */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E386029D0E0FC00DD3E7BBFE94708676 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		F24A50681C071CF79B6A9E2CF88934CA /* [CP] Copy XCFrameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/PhonePePayment/PhonePePayment-xcframeworks-input-files.xcfilelist",
+			);
+			name = "[CP] Copy XCFrameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/PhonePePayment/PhonePePayment-xcframeworks-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/PhonePePayment/PhonePePayment-xcframeworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FB88B077C92FFEC562F7BCCE41B9AEA7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0BA6E13874E379043B4FADE182B5D666 /* Pods-PhonePeSDKIos-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		926EB566AE3F4251F692C36FB667F136 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PhonePePayment;
+			target = F6A43AC75024799F4CE9B382496CA5C5 /* PhonePePayment */;
+			targetProxy = 1B6F8DFC96079707E1EA9D935CAD1A18 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		05D8EDAFB1D309378E95A89A22A3AAAD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6A26DBCB1600F9FD427901CEEE48D5FC /* PhonePePayment.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		55587E9BFAF5332FA83FD967B3931F7B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7F374EB08DE96DE973DCD5A8CDE48CD8 /* Pods-PhonePeSDKIos.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-PhonePeSDKIos/Pods-PhonePeSDKIos-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-PhonePeSDKIos/Pods-PhonePeSDKIos.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		59B00A01FB66F4813BEB2C662968DAC0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7E91167BF5ABE23ADECE02A373C935CB /* PhonePePayment.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7EE7A78859F657F6BEFC651185B43192 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		CEA265CD342C9941EA0811E5252FB662 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5D951CD313F016619C5C8F28757BFA6B /* Pods-PhonePeSDKIos.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-PhonePeSDKIos/Pods-PhonePeSDKIos-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-PhonePeSDKIos/Pods-PhonePeSDKIos.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D299434AB35E7FD6F7921C8EF24742FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D299434AB35E7FD6F7921C8EF24742FF /* Debug */,
+				7EE7A78859F657F6BEFC651185B43192 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5882A56FF8BCCFFFF0110FB411477957 /* Build configuration list for PBXNativeTarget "Pods-PhonePeSDKIos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEA265CD342C9941EA0811E5252FB662 /* Debug */,
+				55587E9BFAF5332FA83FD967B3931F7B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		77BA1CE40C1C88600785CF69058F7788 /* Build configuration list for PBXAggregateTarget "PhonePePayment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				05D8EDAFB1D309378E95A89A22A3AAAD /* Debug */,
+				59B00A01FB66F4813BEB2C662968DAC0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
