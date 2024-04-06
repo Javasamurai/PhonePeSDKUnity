@@ -1,4 +1,7 @@
 <dependencies>
+<iosPods>
+    <iosPod name="PhonePePayment"/>
+  </iosPods>
   <packages>
     <package>phonepe.intentsdk.android.release:IntentSDK:2.4.3</package>
   </packages>

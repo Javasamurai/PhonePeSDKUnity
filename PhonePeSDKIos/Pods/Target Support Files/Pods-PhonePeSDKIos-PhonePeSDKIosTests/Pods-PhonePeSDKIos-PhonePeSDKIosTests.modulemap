@@ -1,0 +1,6 @@
+framework module Pods_PhonePeSDKIos_PhonePeSDKIosTests {
+  umbrella header "Pods-PhonePeSDKIos-PhonePeSDKIosTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
