@@ -15,6 +15,7 @@
 		BF3BF77C2BC1CCA900D672A8 /* PhonePeSDKIos.h in Headers */ = {isa = PBXBuildFile; fileRef = BF3BF76E2BC1CCA900D672A8 /* PhonePeSDKIos.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BF3BF7862BC1CD6C00D672A8 /* PhonePeSDKPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3BF7852BC1CD6C00D672A8 /* PhonePeSDKPlugin.swift */; };
 		BF3BF7882BC1D3F500D672A8 /* ChecksumHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3BF7872BC1D3F500D672A8 /* ChecksumHelper.swift */; };
+		BFD116982BC32F180036E400 /* UnityBridge.mm in Sources */ = {isa = PBXBuildFile; fileRef = BFD116972BC32F180036E400 /* UnityBridge.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +40,7 @@
 		BF3BF77A2BC1CCA900D672A8 /* PhonePeSDKIosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhonePeSDKIosTests.swift; sourceTree = "<group>"; };
 		BF3BF7852BC1CD6C00D672A8 /* PhonePeSDKPlugin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PhonePeSDKPlugin.swift; path = ../../../Desktop/PhonePeSDKPlugin.swift; sourceTree = "<group>"; };
 		BF3BF7872BC1D3F500D672A8 /* ChecksumHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChecksumHelper.swift; sourceTree = "<group>"; };
+		BFD116972BC32F180036E400 /* UnityBridge.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = UnityBridge.mm; sourceTree = "<group>"; };
 		DEB5CA11139EC4BA405D24C6 /* Pods_PhonePeSDKIos_PhonePeSDKIosTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PhonePeSDKIos_PhonePeSDKIosTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF7E7D59AFE56E47D3878630 /* Pods-PhonePeSDKIos-PhonePeSDKIosTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhonePeSDKIos-PhonePeSDKIosTests.release.xcconfig"; path = "Target Support Files/Pods-PhonePeSDKIos-PhonePeSDKIosTests/Pods-PhonePeSDKIos-PhonePeSDKIosTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -107,6 +109,7 @@
 		BF3BF76D2BC1CCA900D672A8 /* PhonePeSDKIos */ = {
 			isa = PBXGroup;
 			children = (
+				BFD116972BC32F180036E400 /* UnityBridge.mm */,
 				BF3BF76E2BC1CCA900D672A8 /* PhonePeSDKIos.h */,
 				BF3BF7852BC1CD6C00D672A8 /* PhonePeSDKPlugin.swift */,
 				BF3BF76F2BC1CCA900D672A8 /* PhonePeSDKIos.docc */,
@@ -302,6 +305,7 @@
 			files = (
 				BF3BF7702BC1CCA900D672A8 /* PhonePeSDKIos.docc in Sources */,
 				BF3BF7882BC1D3F500D672A8 /* ChecksumHelper.swift in Sources */,
+				BFD116982BC32F180036E400 /* UnityBridge.mm in Sources */,
 				BF3BF7862BC1CD6C00D672A8 /* PhonePeSDKPlugin.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
