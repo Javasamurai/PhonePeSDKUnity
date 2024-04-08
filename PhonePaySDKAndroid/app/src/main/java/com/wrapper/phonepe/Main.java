@@ -44,13 +44,13 @@ public class Main extends UnityPlayerActivity {
         PhonePe.init(context, currentEnvironment, merchantID, appID);
     }
 
-    public static void CreateTransaction(Context context, String merchantID, String salt, int saltIndex) throws JSONException, NoSuchAlgorithmException, FileNotFoundException {
+    public static void CreateTransaction(Context context, String merchantID, String salt, int saltIndex, float amount) throws JSONException, NoSuchAlgorithmException, FileNotFoundException {
         JSONObject jsonObject = new JSONObject();
         jsonObject.put("merchantId", merchantID);
         jsonObject.put("merchantUserId", System.currentTimeMillis());
         jsonObject.put("merchantTransactionId", "AXDSDS");
         jsonObject.put("callbackUrl", "https://webhook.site/61639a71-bf77-46d0-88a5-5d3beb9513c7");
-        jsonObject.put("amount", 200);
+        jsonObject.put("amount", amount);
         jsonObject.put("mobileNumber", "7976062916");
 
         JSONObject paymentInstrument = new JSONObject();

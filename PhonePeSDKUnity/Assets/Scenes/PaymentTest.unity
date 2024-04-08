@@ -239,6 +239,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startButton: {fileID: 840465505}
+  amount: 400
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0

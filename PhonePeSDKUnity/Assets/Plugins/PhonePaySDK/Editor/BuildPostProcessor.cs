@@ -30,7 +30,7 @@ public class BuildPostProcessor
         plistElementArray.AddString("ppemerchantsdkv3");
         plistElementArray.AddString("paytmmp");
         plistElementArray.AddString("gpay");
-        rootDict.SetString("PhonePeAppId", "phonePeConfig.appID");
+        rootDict.SetString("PhonePeAppId", null);
         
         File.WriteAllText(plistPath, plist.WriteToString());
     }

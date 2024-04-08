@@ -16,14 +16,9 @@ namespace PhonePaySDK
             pluginClass.CallStatic("InitPhonePe", new object[] { applicationContext, (int) environment, merchantID, appID });
         }
 
-        public override void StartTransaction(string merchantID, string salt, int saltIndex)
+        public override void StartTransaction(string merchantID, string salt, int saltIndex, float amount)
         {
-            pluginClass.CallStatic("CreateTransaction", applicationContext, merchantID, salt, saltIndex);
-        }
-
-        public override void GetTransactionStatus()
-        {
-            
+            pluginClass.CallStatic("CreateTransaction", applicationContext, merchantID, salt, saltIndex, amount);
         }
     }
 }

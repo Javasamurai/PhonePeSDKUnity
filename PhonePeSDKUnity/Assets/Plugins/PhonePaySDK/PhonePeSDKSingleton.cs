@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 namespace PhonePaySDK
@@ -32,12 +33,21 @@ namespace PhonePaySDK
 #elif  UNITY_IOS
             _client = new IosClient();
             _client.Initialize(_config.environment, _config.merchantId, string.IsNullOrEmpty(_config.appID) ? null : _config.appID);
+            _client.onTransactionDone += (status) =>
+            {
+                Debug.Log("Transaction status: " + status);
+            };
 #endif
         }
         
-        public void StartTransaction()
+        public void StartTransaction(float amount)
         {
-            _client.StartTransaction(_config.merchantId, _config.salt, _config.saltIndex);
+            _client.StartTransaction(_config.merchantId, _config.salt, _config.saltIndex, amount);
+        }
+
+        private void OnDestroy()
+        {
+            _client.onTransactionDone = null;
         }
     }
     
