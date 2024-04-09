@@ -2,9 +2,9 @@ using System.Runtime.InteropServices;
 
 namespace PhonePaySDK
 {
+    #if UNITY_IOS
     public class IosClient : IClient
     {
-        #if UNITY_IOS
         [DllImport("__Internal")]
         private static extern void initialize(int environment, string merchantID, string appID);
         
@@ -27,6 +27,6 @@ namespace PhonePaySDK
         {
             return isPhonePeInstalled();
         }
-        #endif
     }
+    #endif
 }

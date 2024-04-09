@@ -40,8 +40,25 @@ namespace PhonePaySDK
 #endif
         }
         
+        public void OnTransactionDone(string status)
+        {
+            if (status == "SUCCESS")
+            {
+                Debug.Log("Transaction successful");
+            }
+            else
+            {
+                Debug.Log("Transaction failed");
+            }
+        }
+        
         public void StartTransaction(float amount)
         {
+            if (!_client.IsPhonePeInstalled())
+            {
+                Debug.LogError("PhonePe app not installed");
+                return;
+            }
             _client.StartTransaction(_config.merchantId, _config.salt, _config.saltIndex, amount);
         }
 

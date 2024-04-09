@@ -3,6 +3,7 @@ package com.wrapper.phonepe;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
 import android.util.Base64;
 import android.util.Log;
@@ -11,7 +12,9 @@ import com.phonepe.intent.sdk.api.B2BPGRequest;
 import com.phonepe.intent.sdk.api.B2BPGRequestBuilder;
 import com.phonepe.intent.sdk.api.PhonePe;
 import com.phonepe.intent.sdk.api.PhonePeInitException;
+import com.phonepe.intent.sdk.api.UPIApplicationInfo;
 import com.phonepe.intent.sdk.api.models.PhonePeEnvironment;
+import com.unity3d.player.UnityPlayer;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -20,6 +23,7 @@ import java.io.FileNotFoundException;
 import java.nio.charset.StandardCharsets;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
+import java.util.List;
 
 public class Main extends UnityPlayerActivity {
     static String apiEndPoint = "/pg/v1/pay";
@@ -44,6 +48,15 @@ public class Main extends UnityPlayerActivity {
         PhonePe.init(context, currentEnvironment, merchantID, appID);
     }
 
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+
+        if (requestCode == B2B_PG_REQUEST_CODE) {
+            UnityPlayer.UnitySendMessage("PhonePeSDK", "OnTransactionDone", resultCode == 1 ? "SUCCESS" : "FAILURE");
+        }
+    }
+
     public static void CreateTransaction(Context context, String merchantID, String salt, int saltIndex, float amount) throws JSONException, NoSuchAlgorithmException, FileNotFoundException {
         JSONObject jsonObject = new JSONObject();
         jsonObject.put("merchantId", merchantID);
@@ -63,7 +76,6 @@ public class Main extends UnityPlayerActivity {
         jsonObject.put("deviceContext", deviceContext);
 
         String base64 = new String(Base64.encodeToString(jsonObject.toString().getBytes(StandardCharsets.UTF_8), Base64.NO_WRAP));
-//        String s = "099eb0cd-02cf-4e2a-8aca-3e6c6aff0399";
 
         String checksum = sha256(base64 + apiEndPoint + salt) + "###" + saltIndex;
         B2BPGRequest b2BPGRequest = new B2BPGRequestBuilder()
@@ -102,5 +114,17 @@ public class Main extends UnityPlayerActivity {
             hexString.append(hex);
         }
         return hexString.toString();
+    }
+    public static boolean IsPhonePeInstalled()
+    {
+        try {
+            List<UPIApplicationInfo> upiApps = PhonePe.getUpiApps();
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
+                return upiApps.stream().filter(n -> n.getPackageName() == "com.phonepe.simulator" || n.getPackageName() == "com.phonepe.app").count() >= 0;
+            } 
+            return false;
+        } catch (PhonePeInitException e) {
+            throw new RuntimeException(e);
+        }
     }
 }

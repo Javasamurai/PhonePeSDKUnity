@@ -93,7 +93,7 @@ extension PhonePeSDKPlugin
 //        let redirectURL = "https://webhook.site/a6cbe164-d499-42d4-b18a-eda2a1077f04"
         let redirectURL = "https://www.phonepe.com"
         var paymentInstrument: [String: Any] = [:]
-//        paymentInstrument["vpa"] = "test@ybl"
+        paymentInstrument["vpa"] = nil
         paymentInstrument["type"] = "UPI_INTENT"
         paymentInstrument["targetApp"] = "PHONEPE"
         
@@ -135,6 +135,11 @@ extension PhonePeSDKPlugin
                      animated: true) { _, result in
                 let text = "\(result)"
                 print(text)
+                if (text == "success")
+                {
+                    UnitySendMessage("PhonePeSDK", "OnTransactionDone", "SUCCESS")
+                }
+
                 print("Completion:---------------------")
             }
     }
