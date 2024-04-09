@@ -20,5 +20,10 @@ namespace PhonePaySDK
         {
             pluginClass.CallStatic("CreateTransaction", applicationContext, merchantID, salt, saltIndex, amount);
         }
+        
+        public override bool IsPhonePeInstalled()
+        {
+            return pluginClass.CallStatic<bool>("IsPhonePeInstalled");
+        }
     }
 }

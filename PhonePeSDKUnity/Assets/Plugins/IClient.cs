@@ -20,5 +20,7 @@ namespace PhonePaySDK
             onTransactionDone?.Invoke(false);
             return false;
         }
+
+        public abstract bool IsPhonePeInstalled();
     }
 }

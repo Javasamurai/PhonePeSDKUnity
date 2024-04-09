@@ -20,6 +20,13 @@ namespace PhonePaySDK
         {
              startTransaction(merchantID, salt, saltIndex, amount);
         }
+        [DllImport("__Internal")]
+        private static extern bool isPhonePeInstalled();
+
+        public override bool IsPhonePeInstalled()
+        {
+            return isPhonePeInstalled();
+        }
         #endif
     }
 }
