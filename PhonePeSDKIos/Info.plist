@@ -2,41 +2,86 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>AvailableLibraries</key>
+	<key>CADisableMinimumFrameDuration</key>
+	<false/>
+	<key>CADisableMinimumFrameDurationOnPhone</key>
+	<false/>
+	<key>CFBundleAllowMixedLocalizations</key>
+	<true/>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>en</string>
+	<key>CFBundleDisplayName</key>
+	<string>PhonePeTest</string>
+	<key>CFBundleExecutable</key>
+	<string>${EXECUTABLE_NAME}</string>
+	<key>CFBundleIdentifier</key>
+	<string>${PRODUCT_BUNDLE_IDENTIFIER}</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>${PRODUCT_NAME}</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.0</string>
+	<key>CFBundleURLTypes</key>
 	<array>
 		<dict>
-			<key>LibraryIdentifier</key>
-			<string>ios-arm64_i386_x86_64-simulator</string>
-			<key>LibraryPath</key>
-			<string>PhonePePayment.framework</string>
-			<key>SupportedArchitectures</key>
+			<key>CFBundleURLName</key>
+			<string>com.PhonePe-iOS-Intent-SDK-Integration</string>
+			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>arm64</string>
-				<string>i386</string>
-				<string>x86_64</string>
+				<string>CapitalRushIosPhonePe</string>
 			</array>
-			<key>SupportedPlatform</key>
-			<string>ios</string>
-			<key>SupportedPlatformVariant</key>
-			<string>simulator</string>
-		</dict>
-		<dict>
-			<key>LibraryIdentifier</key>
-			<string>ios-arm64_armv7</string>
-			<key>LibraryPath</key>
-			<string>PhonePePayment.framework</string>
-			<key>SupportedArchitectures</key>
-			<array>
-				<string>arm64</string>
-				<string>armv7</string>
-			</array>
-			<key>SupportedPlatform</key>
-			<string>ios</string>
 		</dict>
 	</array>
-	<key>CFBundlePackageType</key>
-	<string>XFWK</string>
-	<key>XCFrameworkFormatVersion</key>
-	<string>1.0</string>
+	<key>CFBundleVersion</key>
+	<string>0</string>
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+		<string>ppemerchantsdkv1</string>
+		<string>ppemerchantsdkv2</string>
+		<string>ppemerchantsdkv3</string>
+		<string>paytmmp</string>
+		<string>gpay</string>
+	</array>
+	<key>LSRequiresIPhoneOS</key>
+	<true/>
+	<key>PhonePeAppId</key>
+	<string></string>
+	<key>UILaunchStoryboardName</key>
+	<string>LaunchScreen-iPhone</string>
+	<key>UILaunchStoryboardName~ipad</key>
+	<string>LaunchScreen-iPad</string>
+	<key>UILaunchStoryboardName~iphone</key>
+	<string>LaunchScreen-iPhone</string>
+	<key>UILaunchStoryboardName~ipod</key>
+	<string>LaunchScreen-iPhone</string>
+	<key>UIPrerenderedIcon</key>
+	<false/>
+	<key>UIRequiredDeviceCapabilities</key>
+	<array>
+		<string>arm64</string>
+		<string>metal</string>
+	</array>
+	<key>UIRequiresFullScreen</key>
+	<true/>
+	<key>UIRequiresPersistentWiFi</key>
+	<false/>
+	<key>UIStatusBarHidden</key>
+	<true/>
+	<key>UIStatusBarStyle</key>
+	<string>UIStatusBarStyleDefault</string>
+	<key>UISupportedInterfaceOrientations</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+		<string>UIInterfaceOrientationPortraitUpsideDown</string>
+		<string>UIInterfaceOrientationLandscapeRight</string>
+		<string>UIInterfaceOrientationLandscapeLeft</string>
+	</array>
+	<key>UIViewControllerBasedStatusBarAppearance</key>
+	<true/>
+	<key>Unity_LoadingActivityIndicatorStyle</key>
+	<integer>-1</integer>
 </dict>
 </plist>
