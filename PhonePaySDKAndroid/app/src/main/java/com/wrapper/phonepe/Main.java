@@ -52,8 +52,16 @@ public class Main extends UnityPlayerActivity {
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
 
+        Log.d("Transaction complete", requestCode + ":" + resultCode);
         if (requestCode == B2B_PG_REQUEST_CODE) {
-            UnityPlayer.UnitySendMessage("PhonePeSDK", "OnTransactionDone", resultCode == 1 ? "SUCCESS" : "FAILURE");
+            if (resultCode == Activity.RESULT_OK)
+            {
+                UnityPlayer.UnitySendMessage("PhonePeSDK", "OnTransactionDone", "SUCCESS");
+            }
+            else
+            {
+                UnityPlayer.UnitySendMessage("PhonePeSDK", "OnTransactionDone","FAILURE");
+            }
         }
     }
 
@@ -115,13 +123,14 @@ public class Main extends UnityPlayerActivity {
         }
         return hexString.toString();
     }
+
     public static boolean IsPhonePeInstalled()
     {
         try {
             List<UPIApplicationInfo> upiApps = PhonePe.getUpiApps();
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
                 return upiApps.stream().filter(n -> n.getPackageName() == "com.phonepe.simulator" || n.getPackageName() == "com.phonepe.app").count() >= 0;
-            } 
+            }
             return false;
         } catch (PhonePeInitException e) {
             throw new RuntimeException(e);
