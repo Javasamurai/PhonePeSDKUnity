@@ -4,7 +4,7 @@ apply plugin: 'com.android.library'
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation 'androidx.appcompat:appcompat:1.6.1'
-    implementation 'com.google.android.material:material:1.11.0'
+    implementation 'com.google.android.material:material:1.8.0'
 
 // Android Resolver Dependencies Start
     implementation 'phonepe.intentsdk.android.release:IntentSDK:2.4.3' // Assets/PhonePaySDK/Editor/PhonePayDependencies.xml:4
