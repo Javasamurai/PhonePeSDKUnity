@@ -1,14 +1,11 @@
 <dependencies>
-<iosPods>
-    <iosPod name="PhonePePayment"/>
-  </iosPods>
   <packages>
     <package>phonepe.intentsdk.android.release:IntentSDK:2.4.3</package>
   </packages>
   <files />
   <settings>
-    <setting name="androidAbis" value="armeabi-v7a" />
-    <setting name="bundleId" value="com.metronome.capital" />
+    <setting name="androidAbis" value="arm64-v8a,armeabi-v7a" />
+    <setting name="bundleId" value="com.DefaultCompany.PhonePeTest" />
     <setting name="explodeAars" value="True" />
     <setting name="gradleBuildEnabled" value="True" />
     <setting name="gradlePropertiesTemplateEnabled" value="True" />

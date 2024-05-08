@@ -27,7 +27,7 @@ import java.util.List;
 
 public class Main extends UnityPlayerActivity {
     static String apiEndPoint = "/pg/v1/pay";
-    static String packageName = "com.phonepe.simulator";
+    static String packageName = "com.phonepe.app";
     private static int B2B_PG_REQUEST_CODE = 777;
 
     @Override
@@ -35,17 +35,23 @@ public class Main extends UnityPlayerActivity {
         super.onCreate(savedInstanceState);
     }
 
-    public static void InitPhonePe(Context context, int environment, String merchantID, String appID)
-    {
+    public static void InitPhonePe(Context context, int environment, String merchantID, String appID) throws PhonePeInitException {
         PhonePeEnvironment currentEnvironment = PhonePeEnvironment.SANDBOX;
         for (PhonePeEnvironment env : PhonePeEnvironment.values()) {
             if (env.ordinal() == environment) {
                 currentEnvironment = env;
             }
         }
-
         Log.d("Zain", "Phonepe init called successfully:" + context);
         PhonePe.init(context, currentEnvironment, merchantID, appID);
+
+        try {
+            String string_signature = PhonePe.getPackageSignature();
+            Log.d("PackageSignature", "Phonepe string_signature: " + string_signature);
+        }
+        catch (Exception error){
+            Log.d("PackageSignatureError", "Exception: " + error);
+        }
     }
 
     @Override
@@ -65,27 +71,34 @@ public class Main extends UnityPlayerActivity {
         }
     }
 
-    public static void CreateTransaction(Context context, String merchantID, String salt, int saltIndex, float amount) throws JSONException, NoSuchAlgorithmException, FileNotFoundException {
+    public static void CreateTransaction(Context context, String merchantID, String salt, int saltIndex, float amount, String transactionID, String UserId, String device) throws JSONException, NoSuchAlgorithmException, FileNotFoundException {
         JSONObject jsonObject = new JSONObject();
         jsonObject.put("merchantId", merchantID);
-        jsonObject.put("merchantUserId", System.currentTimeMillis());
-        jsonObject.put("merchantTransactionId", "AXDSDS");
+        jsonObject.put("merchantUserId", UserId);
+        jsonObject.put("merchantTransactionId", transactionID);
         jsonObject.put("callbackUrl", "https://webhook.site/61639a71-bf77-46d0-88a5-5d3beb9513c7");
         jsonObject.put("amount", amount);
-        jsonObject.put("mobileNumber", "7976062916");
+        jsonObject.put("mobileNumber", "8979964604");
 
         JSONObject paymentInstrument = new JSONObject();
         JSONObject deviceContext = new JSONObject();
-        deviceContext.put("deviceOS", "ANDROID");
 
-        paymentInstrument.put("type", "UPI_INTENT");
-        paymentInstrument.put("targetApp", packageName);
+        deviceContext.put("deviceOS", device);
+        paymentInstrument.put("type", "PAY_PAGE");
+       //paymentInstrument.put("targetApp", packageName);
+
         jsonObject.put("paymentInstrument", paymentInstrument);
-        jsonObject.put("deviceContext", deviceContext);
+        //jsonObject.put("deviceContext", deviceContext);
+
 
         String base64 = new String(Base64.encodeToString(jsonObject.toString().getBytes(StandardCharsets.UTF_8), Base64.NO_WRAP));
 
+        Log.d("Checker", "error testing: " + base64);
+
         String checksum = sha256(base64 + apiEndPoint + salt) + "###" + saltIndex;
+
+        Log.d("Checker", "error testing2: " + checksum);
+
         B2BPGRequest b2BPGRequest = new B2BPGRequestBuilder()
                 .setData(base64).
                 setChecksum(checksum)

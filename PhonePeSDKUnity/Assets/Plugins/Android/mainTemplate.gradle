@@ -7,14 +7,13 @@ dependencies {
     implementation 'com.google.android.material:material:1.8.0'
 
 // Android Resolver Dependencies Start
-    implementation 'phonepe.intentsdk.android.release:IntentSDK:2.4.3' // Assets/PhonePaySDK/Editor/PhonePayDependencies.xml:4
+    implementation 'phonepe.intentsdk.android.release:IntentSDK:2.4.3' // Assets/Plugins/PhonePaySDK/Editor/PhonePayDependencies.xml:4
 // Android Resolver Dependencies End
 **DEPS**}
 
 // Android Resolver Exclusions Start
 android {
   packagingOptions {
-      exclude ('/lib/arm64-v8a/*' + '*')
       exclude ('/lib/armeabi/*' + '*')
       exclude ('/lib/mips/*' + '*')
       exclude ('/lib/mips64/*' + '*')
