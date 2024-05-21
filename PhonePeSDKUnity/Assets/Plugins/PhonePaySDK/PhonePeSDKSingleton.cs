@@ -32,10 +32,10 @@ namespace PhonePaySDK
     _client.Initialize(_config.environment, _config.merchantId, string.IsNullOrEmpty(_config.appID) ? null : _config.appID);
 #elif UNITY_ANDROID
             _client = new AndroidClient();
-            _client.Initialize(_config.environment, _config.merchantId, string.IsNullOrEmpty(_config.appID) ? "" : _config.appID);
+            _client.Initialize(_config.environment, _config.merchantId, string.IsNullOrEmpty(_config.appID) ? null : _config.appID);
 #elif UNITY_IOS
             _client = new IosClient();
-            _client.Initialize(_config.environment, _config.merchantId, string.IsNullOrEmpty(_config.appID) ? null : _config.appID);
+            _client.Initialize(_config.environment, _config.merchantId, string.IsNullOrEmpty(_config.appID) ? "" : _config.appID);
             _client.onTransactionDone += (status) =>
             {
                 Debug.Log("Transaction status: " + status);
