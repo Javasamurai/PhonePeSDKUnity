@@ -27,10 +27,13 @@ namespace PhonePaySDK
 
         private void Init()
         {
-#if UNITY_ANDROID
+#if UNITY_EDITOR
+    _client = new EditorClient();
+    _client.Initialize(_config.environment, _config.merchantId, string.IsNullOrEmpty(_config.appID) ? null : _config.appID);
+#elif UNITY_ANDROID
             _client = new AndroidClient();
             _client.Initialize(_config.environment, _config.merchantId, string.IsNullOrEmpty(_config.appID) ? null : _config.appID);
-#elif  UNITY_IOS
+#elif UNITY_IOS
             _client = new IosClient();
             _client.Initialize(_config.environment, _config.merchantId, string.IsNullOrEmpty(_config.appID) ? null : _config.appID);
             _client.onTransactionDone += (status) =>
@@ -67,5 +70,22 @@ namespace PhonePaySDK
             _client.onTransactionDone = null;
         }
     }
-    
+
+    internal class EditorClient : IClient
+    {
+        public override void Initialize(ENVIRONMENT environment, string merchantID, string appID)
+        {
+            Debug.Log("EditorClient initialized");
+        }
+
+        public override void StartTransaction(string merchantID, string salt, int saltIndex, float amount)
+        {
+            Debug.Log("Transaction started");
+        }
+
+        public override bool IsPhonePeInstalled()
+        {
+            return true;
+        }
+    }
 }
